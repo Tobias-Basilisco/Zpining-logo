@@ -1,0 +1,90 @@
+.badge__circle,
+.badge__main {
+    width: 100%;
+    height: auto
+}
+
+.badge__circle {
+    display: block;
+    will-change: transform;
+    -webkit-animation: rotation 30s linear infinite;
+    -o-animation: rotation 30s infinite linear;
+    animation: rotation 30s linear infinite
+}
+
+.badge__main {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes rotation {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -o-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+
+
+.badge {
+    position: relative;
+    width: 135px;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+@media (min-width:768px) {
+    .badge {
+        width: 187px
+    }
+}
+
+@media (min-width:1200px) {
+    .badge {
+        width: 210px
+    }
+}
+
+@media (min-width:1600px) {
+    .badge {
+        width: 295px
+    }
+}
+
+.marquee-slider .badge {
+    position: absolute;
+    left: 54%;
+    top: -3%
+}
